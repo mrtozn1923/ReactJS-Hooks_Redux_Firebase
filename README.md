@@ -1,4 +1,4 @@
-# NODEJS-FullStack
+# ReactJS-Hooks, Redux, Firebase
 
 Bu repository üzerinde ReactJS ile yapmış olduğum çalışmalarıma ait dosyalara yer veriyorum.
 
