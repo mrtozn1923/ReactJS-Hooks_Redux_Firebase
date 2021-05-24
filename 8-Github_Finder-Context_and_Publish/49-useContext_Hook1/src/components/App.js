@@ -1,4 +1,4 @@
-import React, { userState } from 'react'
+import React, { useState } from 'react'
 import {BrowserRouter,Route, Switch, Link, NavLink} from 'react-router-dom'
 import Navbar from './Navbar'
 import Users from './Users'
@@ -8,12 +8,12 @@ import About from './About'
 import axios from 'axios'
 import UserDetails from './UserDetails'
 
-App=()=> {
-    const [users,setUsers]=userState([])
-    const [user,setUser]=userState({})
-    const [loading,setLoading]=userState(false)
-    const [alert,setAlert]=userState(null)
-    const [repos,setRepos]=userState([])
+const App=()=> {
+    const [users,setUsers]=useState([])
+    const [user,setUser]=useState({})
+    const [loading,setLoading]=useState(false)
+    const [alert,setAlert]=useState(null)
+    const [repos,setRepos]=useState([])
 
     const searchUsers = (keyword)=>{
         setLoading(true)
