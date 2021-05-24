@@ -10,19 +10,8 @@ import UserDetails from './UserDetails'
 import GithubState from '../context/githubState'
 
 const App=()=> {
-    const [loading,setLoading]=useState(false);
     const [alert,setAlert]=useState(null);
-    const [repos,setRepos]=useState([]);
 
-    const getUserRepos=(username)=>{
-        setLoading(true);
-            axios
-            .get(`https://api.github.com/users/${username}/repos`)
-            .then(res=>{
-                setRepos(res.data)
-                setLoading(false)
-            });
-    }
     const showAlert=(msg,type)=>{
         setAlert({msg,type})
         setTimeout(() => {
@@ -45,13 +34,7 @@ const App=()=> {
                     )
                 }/>
                 <Route path="/about" component={About}/>   
-                <Route path="/user/:login" render={props=>(
-                    <UserDetails 
-                        {...props} 
-                        getUserRepos={getUserRepos} 
-                        repos={repos}
-                    />
-                )}/>   
+                <Route path="/user/:login" component={UserDetails}/>   
             </Switch>            
         </BrowserRouter>
         </GithubState>

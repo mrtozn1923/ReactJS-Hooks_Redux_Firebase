@@ -36,6 +36,18 @@ const GithubState=(props)=>{
             });
     }
 
+    const getUserRepos=(username)=>{
+        setLoading();
+            axios
+            .get(`https://api.github.com/users/${username}/repos`)
+            .then(res=>{
+                dispatch({
+                    type:"GET_REPOS",
+                    payload:res.data
+                })
+            });
+    }
+
     const clearUsers=()=>{
         dispatch({
             type:"CLEAR_USERS"
@@ -54,7 +66,8 @@ const GithubState=(props)=>{
             loading:state.loading,
             searchUsers,
             clearUsers,
-            getUser
+            getUser,
+            getUserRepos
         }}>
             {props.children}
     </GithubContext.Provider>
