@@ -18,3 +18,11 @@ Bu repository üzerinde ReactJS ile yapmış olduğum çalışmalarıma ait dosy
 - Firebase
 - BlogApp:Firebase
 - Firebase Authentication
+
+## Github Finder (Hosting:Netlify)
+Github API kullanarak kullanıcı profillerini kullanıcı adına göre arayan ve repo bilgilerini listeleyen react uygulamama netlify üzerinden erişebilirsiniz. 
+
+NOT: Özel bir token ile erişim yapılmadığı için Github API isteklerde sınırlama getirebilir.
+
+https://githubfinder-mertozen.netlify.app/
+
