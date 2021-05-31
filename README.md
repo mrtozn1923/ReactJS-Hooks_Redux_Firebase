@@ -37,6 +37,6 @@ https://githubfinder-mertozen.netlify.app/
 
 `NOT:` Production için hazırladığınız projeyi herhangi bir statik uygulama yayınlayabileceğiniz hosting firması kullanarak yayınlayabilirsiniz. Bunun için `dist` klasörü altındaki bundle.js, index.html ve gif dosyalarını göndermeniz yeterli olacaktır. Ben uygulamayı `Netlify` üzerinde yayınlamayı tercih ettim.
 
-![Screenshot](0-Content/GithubFinder1.png)
+![Screenshot](0-Content/GithubFinder1.PNG)
 
-![Screenshot](0-Content/GithubFinder2.png)
+![Screenshot](0-Content/GithubFinder2.PNG)
