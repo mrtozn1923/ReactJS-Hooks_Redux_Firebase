@@ -24,7 +24,7 @@ Github API kullanarak kullanıcı profillerini kullanıcı adına göre arayan v
 
 NOT: Özel bir token ile erişim yapılmadığı için Github API isteklerde sınırlama getirebilir.
 
-https://githubfinder-mertozen.netlify.app/
+https://github-finder-mertozen.netlify.app/
 
 ### Kişisel Bilgisayarınızda Çalıştırma
 1. Bilgisayarınızda NodeJS kurulu olmalıdır. Benim bilgisayarımda `NodeJS v14.15.3` aynı zamanda `NPM 6.14.9` versiyonu yüklüdür.
